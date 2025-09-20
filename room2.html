@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/cycle2.css" rel="stylesheet" type="text/css">
+  <link href="css/popup.css" rel="stylesheet" type="text/css">
+   <meta name="keywords" content="宜蘭,亞維儂,宜蘭民宿,民宿,傳統藝術中心,童玩節,綠色博覽會,望龍">
+    <meta name="copyright" content="本網頁著作權屬於宜蘭亞維儂民© copyright 2013 ilan-avignon All Rights Reserved ">
+    <title>宜蘭亞維儂民宿</title>
+<style>
+.txt_note
+{
+	position:absolute;background-color:#999;color:#ee7;width:36px;height:20px;z-index:199;font-family:'標楷體';    
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+
+<script>
+$(function() {
+    $( "#tabs3" ).tabs({});
+});
+
+$(function() {
+    $('#room_select').popup();
+    $('#room_select2').popup();
+    $('.cycle-slideshow6').cycle();
+});
+
+$(function() {
+    $( "#tabs" ).tabs({
+      beforeLoad: function( event, ui ) {
+          ui.jqXHR.error(function() {
+          ui.panel.html("Error" );
+        });
+      }
+    });
+});
+
+$(function() {
+    $( "#tabs2" ).tabs({
+      beforeLoad: function( event, ui ) {
+        ui.jqXHR.error(function() {
+          ui.panel.html("Error" );
+        });
+      }
+    });
+});
+</script>
+
+<script type="text/javascript">
+
+function changeindex1() {
+        document.getElementById("s1").style.zIndex="99";
+        document.getElementById("s2").style.zIndex="98";
+}
+
+function changeindex2() {
+        document.getElementById("s1").style.zIndex="98";
+        document.getElementById("s2").style.zIndex="99";
+}
+</script>
+
+</head>
+<body class="bd">
+  <div class="header">
+        <div class="logo">
+            <img src="images/header_logo.png" onClick="location='index.html';" title="回首頁">
+        </div>
+    </div>
+    <div class="menu_box">
+        <div class="menu">
+            <ul>
+                <li><a href="about.html" >關於亞維儂</a></li>
+                <li><a href="bnbview.html" >民宿寫真</a></li>
+                <li class="selected" ><a href="room.html">房型介紹</a></li>
+                <li><a href="order_online.html">線上訂房</a></li>
+                <li><a href="map.html">交通位置</a></li>
+                <li><a href="near_travel.html">景點介紹</a></li>
+                <li><a href="contact.html" class="last" >聯絡我們</a></li>
+            </ul>
+        </div>
+    </div>
+  <div class="slider_box">
+    <div class="cycle-slideshow" data-cycle-loader="wait">
+      <img src="images/slider/room_refalash_im_01.jpg">
+      <img src="images/slider/room_refalash_im_02.jpg">
+      <img src="images/slider/room_refalash_im_03.jpg">
+      <img src="images/slider/room_refalash_im_04.jpg">
+      <img src="images/slider/room_refalash_im_05.jpg">
+      <img src="images/slider/room_refalash_im_06.jpg">
+    </div>
+  </div>
+  <div id="room_select" class="room_box">
+    <div id="tabs">
+      <div class="room_menu">
+        <ul>
+          <li class="head_menu"><a href="#tabs-1">head</a></li>
+          <li><a href="room_a/tabroom1.html">迷迭香</a></li>
+          <li><a href="room_a/tabroom2.html">野薑花</a></li>
+          <li><a href="room_a/tabroom3.html">薰衣草</a></li>
+          <li class="lastli"><a href="room_a/tabroom4.html">向日葵</a></li>
+        </ul>
+      </div>
+      <div class="close">
+            <img src="images/photo_close_btn.png" class="room_select_close" onmouseover="this.src='images/photo_close_btn_over.png'" onmouseout="this.src='images/photo_close_btn.png'" >
+      </div>
+      <div id="tabs-1">
+
+      </div>
+
+    </div>
+
+</div>
+</div>
+ <div id="room_select2" class="room_box">
+    <div id="tabs2">
+      <div class="room_menu">
+        <ul>
+          <li class="head_menu"><a href="#tabs5">head</a></li>
+          <li><a href="room_b/tabroom1.html">克林姆</a></li>
+          <li><a href="room_b/tabroom2.html">雷諾瓦</a></li>
+          <li><a href="room_b/tabroom3.html">莫內</a></li>
+          <li class="lastli"><a href="room_b/tabroom4.html">梵谷</a></li>
+        </ul>
+      </div>
+      <div class="close">
+           <img src="images/photo_close_btn.png" class="room_select2_close" onmouseover="this.src='images/photo_close_btn_over.png'" onmouseout="this.src='images/photo_close_btn.png'" >
+      </div>
+      <div id="tabs5">
+
+    </div>
+
+    </div>
+</div>
+</div>
+<div class="room_select_box">
+  <div class="room_select">
+    <div id="tabs3">
+  <ul>
+    <li class="rs1" id="s1" onclick="changeindex1()"> <a href="#tabs1"><img src="images/room_select1.png" border="0"></a></li>
+    <li class="rs2" id="s2" onclick="changeindex2()"> <a href="#tabs2"><img src="images/room_select2.png" border="0"></a></li>
+  </ul>
+  <div id="tabs1">
+   <div class="room_price">
+		<img src="images/room_info_a.gif">
+            <div class="rooml1">
+            <div class="txt_note">點我</div>
+    		<img src="images/r1/1s.jpg">
+			<div class="read_more"> <a href="#" class="room_select_open" onclick="$('#tabs').tabs({active: 1})">迷迭香</a> </div>
+		</div>
+		<div class="rooml2">
+            <div class="txt_note">點我</div>
+        	<img src="images/r2/1s.jpg">
+			<div class="read_more"> <a href="#" class="room_select_open" onclick="$('#tabs').tabs({active: 2})">野薑花</a> </div>
+		</div>
+	<div class="rooml3">
+            <div class="txt_note">點我</div>
+    	<img src="images/r3/1s.jpg">
+		<div class="read_more"> <a href="#" class="room_select_open" onclick="$('#tabs').tabs({active: 3})">薰衣草</a> </div>
+	</div>
+	<div class="rooml4">
+            <div class="txt_note">點我</div>
+    	<img src="images/r4/1s.jpg">
+		<div class="read_more"> <a href="#" class="room_select_open" onclick="$('#tabs').tabs({active: 4})">向日葵</a> </div>
+   </div>
+ </div>
+  </div>
+  <div id="tabs2">
+
+<div class="room_price">
+   <img src="images/room_info_b.gif">
+   <div class="rooml1"><div class="txt_note">點我</div><img src="images/r5/1s.jpg">
+    <div class="read_more"> <a href="#" class="room_select2_open" onclick=" $('#tabs2').tabs({active: 1})">克林姆</a> </div>
+  </div>
+   <div class="rooml2"><div class="txt_note">點我</div><img src="images/r6/1s.jpg">
+     <div class="read_more"> <a href="javascript: handler(); return false;" class="room_select2_open" onclick="$('#tabs2').tabs({active: 2})">雷諾瓦</a> </div>
+   </div>
+   <div class="rooml3"><div class="txt_note">點我</div><img src="images/r7/1s.jpg">
+     <div class="read_more"> <a href="#" class="room_select2_open" onclick="$('#tabs2').tabs({active: 3})">莫內</a> </div>
+   </div>
+   <div class="rooml4"><div class="txt_note">點我</div><img src="images/r8/1s.jpg">
+     <div class="read_more"> <a href="#" class="room_select2_open" onclick="$('#tabs2').tabs({active: 4})">梵谷</a> </div>
+   </div>
+ </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="room_detail_box">
+  <div class="detail">
+   <img src="images/room_info.png">
+ </div>
+</div>
+<div class="footer_box">
+  <div class="footer">
+  	<a href="http://www.facebook.com/ilanavignon" target="_blank">
+   		<img src="images/footer_infor.png">
+   	</a>
+ </div>
+</div>
+<script type="text/javascript">
+ if (document.images) {
+	img1 = new Image();
+	img2 = new Image();
+	img3 = new Image();
+
+	img1.src = "images/r6/1.jpg";
+	img2.src = "images/r6/2.jpg";
+	img3.src = "images/r6/3.jpg";
+  }
+</script>
+</body>
+</html>
+

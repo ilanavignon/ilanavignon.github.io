@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="keywords" content="宜蘭民宿,特色民宿,民宿推薦,民宿包棟">
+    <META NAME="Author" CONTENT="宜蘭民宿包棟">
+    <META NAME="Description" CONTENT="宜蘭員山值得推薦包棟的好民宿,南法陽光的鄉村風格,好山好水的悠閒享受。宜蘭亞維儂民宿，結合光山水色,讓人感受到寧靜的鄉間風光,喜歡自然放鬆清幽的環境絕不可錯過">
+    <meta name="copyright" content="本網頁著作權屬於宜蘭亞維儂民© copyright 2013 ilan-avignon All Rights Reserved ">
+    <title>宜蘭亞維儂民宿</title>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<style>
+.txt_note
+{
+	position:absolute;background-color:#999;color:#ee7;width:36px;height:20px;z-index:199;font-family:'標楷體';    
+}
+.button2
+{
+	border:none;
+	color:#666;
+	font-size:16px;
+	font-family: '微軟正黑體','Arial';
+	background-color:#ffd;
+}
+.button2:hover
+{
+	color:#999;
+	background-color:#ffb;
+}
+.tagNextPrev
+{
+	font-size:24px;
+	border:1px solid #999;
+	background-color:rgba(220,220,180,0.7);
+	top:46px;
+	position:absolute;
+	width:46px;
+	height:46px;
+}
+.tagNextPrev:hover
+{
+	background-color:#ddd;	
+}
+</style>
+<script>
+var slideIndex=1;
+var picClassName = "photo";
+
+$(function() {
+	showDivs(slideIndex,picClassName);
+	
+	$("#photo").click(function(e) {
+		slideIndex=1;
+		picClassName = "photo";
+        showDivs(slideIndex);
+    });
+	$("#avig").click(function(e) {
+		slideIndex=1;
+		picClassName = "avignon";
+        showDivs(slideIndex);
+    });
+	$("#arles").click(function(e) {
+		picClassName = "arles";
+		slideIndex=1;
+        showDivs(slideIndex);
+    });
+});
+
+function showNone()
+{
+	var nn = ["photo","arles","avignon"];
+	for(j=0; j<nn.length; j++)
+	{
+	var i;
+    var x = document.getElementsByClassName(nn[j]);
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none"; 
+		}
+	}
+}
+
+function plusDivs(n) {
+    showDivs(slideIndex += n, picClassName);
+}
+
+function showDivs(n) {
+	showNone();
+    var i;
+    var x = document.getElementsByClassName(picClassName);
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+</script>
+    
+</head>
+<body class="bd">
+	<div class="header">
+        <div class="logo">
+            <img src="images/header_logo.png" onClick="location='about.html';" title="回首頁">
+        </div>
+    </div>
+    <div class="menu_box">
+        <div class="menu">
+            <ul>
+                <li><a href="about.html" >關於亞維儂</a></li>                
+                <li class="selected"><a href="bnbview.html" >民宿寫真</a></li>
+                <li><a href="room.html">房型介紹</a></li>
+                <li><a href="order_online.html">線上訂房</a></li>
+                <li><a href="map.html">交通位置</a></li>
+                <li><a href="near_travel.html">景點介紹</a></li>
+                <li><a href="contact.html" class="last" >聯絡我們</a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="content_box" style="width:880px">
+        <div style="text-align:center"><br>
+
+            <input class="button2" id="photo" type="button" value=" 民 宿 寫 真 ">&emsp;
+            <input class="button2" id="avig" type="button" value=" 亞 維 儂 館 ">&emsp;
+            <input class="button2" id="arles" type="button" value=" 亞 爾 館 ">
+            <div class="w3-content w3-display-container" style="margin-top:5px">
+            
+                <img class="photo" src="images/photo/1.jpg" style="width:100%">
+                <img class="photo" src="images/photo/2.jpg" style="width:100%">
+                <img class="photo" src="images/photo/3.jpg" style="width:100%">
+                <img class="photo" src="images/photo/4.jpg" style="width:100%">
+                <img class="photo" src="images/photo/5.jpg" style="width:100%">
+                <img class="photo" src="images/photo/6.jpg" style="width:100%">
+                <img class="photo" src="images/photo/7.jpg" style="width:100%">
+                <img class="photo" src="images/photo/8.jpg" style="width:100%">
+                <img class="photo" src="images/photo/9.jpg" style="width:100%">
+                <img class="photo" src="images/photo/10.jpg" style="width:100%">
+                <img class="photo" src="images/photo/11.jpg" style="width:100%">
+                <img class="photo" src="images/photo/12.jpg" style="width:100%">
+            
+                <img class="avignon" src="images/avignon/1.jpg" style="width:100%">
+                <img class="avignon" src="images/avignon/2.jpg" style="width:100%">
+                <img class="avignon" src="images/avignon/3.jpg" style="width:100%">
+                <img class="avignon" src="images/avignon/4.jpg" style="width:100%">
+                <img class="avignon" src="images/avignon/5.jpg" style="width:100%">
+                <img class="avignon" src="images/avignon/6.jpg" style="width:100%">
+                
+                <img class="arles" src="images/arles/1.jpg" style="width:100%">
+                <img class="arles" src="images/arles/2.jpg" style="width:100%">
+                <img class="arles" src="images/arles/3.jpg" style="width:100%">
+                <img class="arles" src="images/arles/4.jpg" style="width:100%">
+                <img class="arles" src="images/arles/5.jpg" style="width:100%">
+                <img class="arles" src="images/arles/6.jpg" style="width:100%">
+                <img class="arles" src="images/arles/7.jpg" style="width:100%">
+                <img class="arles" src="images/arles/8.jpg" style="width:100%">
+                
+                <button id="next" class="w3-button w3-display-left tagNextPrev" style="left:0px" onclick="plusDivs(-1)">&#10094;</button>
+                <button id="prev" class="w3-button w3-display-right tagNextPrev" style="right:0px" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+        </div>
+	</div>
+    
+    <div class="footer_box">
+        <div class="footer">
+        <a href="http://www.facebook.com/ilanavignon" target="_blank">
+            <img src="images/footer_infor.png">
+        </a>
+        </div>
+	</div>
+</body>
+</html>
+
